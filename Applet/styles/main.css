@@ -1,0 +1,204 @@
+/*
+TODO: DRY;
+*/
+
+@media (max-width: 760px) {
+	div {
+		opacity: 1;
+	}
+}
+
+@font-face { 
+	font-family: Times; 
+	src: url('../fonts/TimesLTMM'); } 
+
+#musicPanel {
+	margin: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.content {
+	margin: 0;
+	padding: 0;
+}
+
+.brown {
+	color: #7d673d;
+}
+
+.menu {
+	font-family: Times;
+	font-weight: 0;
+    -webkit-text-stroke-color: rgb(255,255,255);
+    -webkit-text-stroke-width: 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.menu-item {
+	color: #7d673d;
+	font-family: Times;
+	font-weight: 0;
+	letter-spacing: 6.5px;
+}
+
+#mouse {
+	animation-name: fadeInBackground;
+	animation-duration: 5s;
+	animation-timing-function: cubic-bezier(.2,.76,.39,1.01);
+	background-image: url('../images/mouse.jpg');
+	background-size: auto 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+#title{
+	animation-name: fadeInTitle;
+    animation-duration: 100s;
+    font-family: Times, "Times New Roman", serif;
+    font-size: 275%;
+    height: auto;
+	width: auto;
+    position: absolute;
+	top: 47vh;
+	right: 60vw;
+}
+
+#subtitle {
+	animation-name: fadeInTitle;
+    animation-duration: 100s;
+    height: auto;
+    letter-spacing: 11px;
+	width: auto;
+    position: absolute;
+	top: 54vh;
+	right: 60vw;
+}
+
+#item1 {
+	animation-name: fadeInMenuItem1;
+    animation-duration: 100s;
+	height: auto;
+	width: auto;
+	position: absolute;
+	top: 30vh;
+	left: 72vw;
+}
+
+#item2 {
+	animation-name: fadeInMenuItem2;
+	animation-duration: 100s;
+	height: auto;
+	width: auto;
+	position: absolute;
+	top: 40vh;
+	left: 74vw;
+}
+
+#item3 {
+	animation-name: fadeInMenuItem3;
+	animation-duration: 100s;
+	height: auto;
+	width: auto;
+	position: absolute;
+	top: 50vh;
+	left: 75vw;
+}
+
+#item4 {
+	animation-name: fadeInMenuItem4;
+	animation-duration: 100s;
+	height: auto;
+	width: auto;
+	position: absolute;
+	top: 60vh;
+	left: 75vw;
+}
+
+#item5 {
+	animation-name: fadeInMenuItem5;
+	animation-duration: 100s;
+	height: auto;
+	width: auto;
+	position: absolute;
+	top: 70vh;
+	left: 74vw;
+}
+
+#item6 {
+	animation-name: fadeInMenuItem6;
+	animation-duration: 100s;
+	height: auto;
+	width: auto;
+	position: absolute;
+	top: 80vh;
+	left: 72vw;
+}
+
+/* Fade-In Animation */
+@keyframes fadeInBackground {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes fadeInTitle {
+	0%	 { opacity: 0; }
+	5%   { opacity: 0; }
+  	8%   { opacity: 1; }
+}
+
+@keyframes fadeInMenuItem1 {
+	0%   { opacity: 0; }
+	8.5%  { opacity: 0; margin-left: -6em; }
+  	9.0%  { opacity: 1; margin-left: 0; }
+}
+@keyframes fadeInMenuItem2 {
+	0%   { opacity: 0; }
+	8.7%  { opacity: 0; margin-left: -6em; }
+  	9.2%  { opacity: 1; margin-left: 0; }
+}
+@keyframes fadeInMenuItem2 {
+	0%   { opacity: 0; }
+	8.9%  { opacity: 0; margin-left: -6em; }
+  	9.4%  { opacity: 1; margin-left: 0; }
+}
+@keyframes fadeInMenuItem3 {
+	0%   { opacity: 0; }
+	9.1%  { opacity: 0; margin-left: -6em; }
+  	9.6%  { opacity: 1; margin-left: 0; }
+}
+@keyframes fadeInMenuItem4 {
+	0%   { opacity: 0; }
+	9.3%  { opacity: 0; margin-left: -6em; }
+  	9.8%  { opacity: 1; margin-left: 0; }
+}
+@keyframes fadeInMenuItem5 {
+	0%   { opacity: 0; }
+	9.5%  { opacity: 0; margin-left: -6em; }
+  	10.0%  { opacity: 1; margin-left: 0; }
+}
+@keyframes fadeInMenuItem6 {
+	0%   { opacity: 0; }
+	9.7%  { opacity: 0; margin-left: -6em; }
+  	10.2%  { opacity: 1; margin-left: 0; }
+}
+
+/*
+TEST
+*/
+
+#item1 {
+	animation-duration: 0s;
+}
+
+#page {
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(50, 50, 50, 0.2);
+}

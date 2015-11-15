@@ -1,0 +1,38 @@
+@font-face { 
+	font-family: Times; 
+	src: url('../fonts/TimesLTMM'); } 
+
+.content {
+	margin: 0;
+	padding: 0;
+}
+
+.brown {
+	color: #7d673d;
+}
+
+#title{
+    font-family: Times, "Times New Roman", serif;
+    font-size: 275%;
+    height: auto;
+	width: 80vw;
+    position: absolute;
+	top: 10vh;
+	left: 10vw;
+}
+
+#subtitle {
+    height: auto;
+    letter-spacing: 11px;
+	width: auto;
+    position: absolute;
+	top: 18vh;
+	left: 10vw;
+}
+
+#content {
+	position: absolute;
+	width: 80vw;
+	top: 22vh;
+	left: 10vw;	
+}
